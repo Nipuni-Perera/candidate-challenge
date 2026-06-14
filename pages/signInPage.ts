@@ -24,7 +24,7 @@ export class SignInPage {
 
     async navigateToLoginPage(): Promise<void> {
         await this.page.goto(
-            `${process.env.BASE_URL}/#/login` ||
+            `${process.env.BASE_URL}/login` ||
                 "https://demo-dashboard.helloagain.com/#/login",
         );
     }
